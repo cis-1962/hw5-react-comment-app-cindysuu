@@ -16,7 +16,7 @@ interface PostListProps {
   onAddReply: (name: string, text: string, parentId?: number,) => void;
 }
 
-const PostList: React.FC<PostListProps> = ({ posts, onAddReply }) => {
+const PostList: React.FC<PostListProps> = ({ posts }) => {
   // const handleVote = (id: number, delta: number) => {
   //   setPosts(posts.map(post => 
   //     post.id === id ? { ...post, votes: post.votes + delta } : post
@@ -30,7 +30,7 @@ const PostList: React.FC<PostListProps> = ({ posts, onAddReply }) => {
         <PostItem 
           key={post.id} 
           post={post} 
-          onAddReply={(name, text) => onAddReply(name, text, post.id)} 
+          // onAddReply={(name, text) => onAddReply(name, text, post.id)} 
           depth={1} />
      ))}
     </div>

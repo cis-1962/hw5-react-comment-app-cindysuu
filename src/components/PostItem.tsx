@@ -29,7 +29,6 @@ const PostItem: React.FC<PostItemProps> = ({ post, depth}) => {
   const style = { marginLeft: `${depth * 20}px` };
 
   return (
-    console.log('depth:', depth),
     // <div className="post-item">
     <div className={postItemClass} style={style}>
       <h3>{post.name}</h3>

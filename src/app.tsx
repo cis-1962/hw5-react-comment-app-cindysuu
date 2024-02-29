@@ -48,7 +48,6 @@ function App() {
   };
 
   return (
-    console.log('posts:', posts),
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
