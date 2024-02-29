@@ -40,3 +40,75 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  margin-bottom: 20px; 
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-container textarea {
+  height: 100px; 
+  resize: vertical; 
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.post-item {
+  margin-left: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.post-item h3, .post-item p {
+  margin: 0;
+}
+
+.reply {
+  margin-left: 20px;
+  background-color: #e9e9e9;
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.votes button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.votes button:hover {
+  background-color: #f0f0f0;
+}
